@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&family=Noto+Sans+Thai:wght@300&family=Prompt:wght@200;400&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    background-color: #132b85;
+    transition: background-color 1s;
+}
+header{
+    position: fixed;
+    background-color: #073784;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 15px 7px 2px 7px rgba(0, 0, 0, 0.4);  
+    z-index: 99;
+}
+header a{
+    position: relative;
+    padding: 30px 80px 30px 80px;
+    color: white;
+    background-color: #073784;
+    text-decoration: none;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
+    
+}
+header a:hover{
+    background-color: #2175ae;
+    transform: scale(1.25, 1.25);
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.75);  
+    z-index: 1;
+}
+header .ph{
+    display: none;
+}
+
+section{
+    opacity: 0.4;
+}
+section:first-child{
+    opacity: 1;
+}
+section:first-child .topic{
+    background-color: #0b206e;
+}
+section .topic{
+    padding-top: 120px;
+    padding-bottom: 75px;
+    text-align: center;
+    color: white;
+    font-family: 'Edu TAS Beginner';
+    font-size: 35pt;
+    background-color: #0e3475;
+    transition: background-color 0.5s;
+}
+section .content{
+    color: white;
+    font-size: 20pt;
+    font-family: 'Prompt', sans-serif;
+}
+#aboutme .content div:first-child{
+    font-size: 23pt;
+    color: #f27e1e;
+}
+#aboutme .content.animation div:first-child,
+#education .content.animation .school-item{
+    animation: fadeIn 0.75s 0s 1;
+}
+#aboutme .content.animation div:last-child,
+#skill .content.animation{
+    animation: fadeIn2 0.75s 0s 1;
+}
+#aboutme .content{
+    display: flex;
+    justify-content: center;
+    column-gap: 200px;
+    margin: 30px 100px 30px 100px;
+}
+#aboutme .content div:nth-child(2){
+    border-radius: 50%;
+    background-image: url('Image/myself.png');
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 2px 3px rgba(0, 0, 0, 0.4);
+}
+#education .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 60px;
+}
+.school-item{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 50px;
+}
+.school-item .school-level{
+    background-color: #b1ddeb;
+    border-radius: 50px 50px 0px 0px;
+    color: black;
+    text-align: center;
+    padding: 30px;
+}
+.school-item .school-name{
+    color: black;
+    text-align: center;
+    font-size: 15pt;
+    padding: 30px;
+    height: 50px;
+}
+.school-item .school-image{
+    background-position: center;
+    background-size: cover;
+}
+.school-item:first-of-type .school-image{
+    background-image: url('Image/elementary.jpg');
+}
+.school-item:nth-of-type(2) .school-image{
+    background-image: url('Image/high.jpg');
+}
+.school-item:last-of-type .school-image{
+    background-image: url('Image/university.jpg');
+}
+.school-item .school-icon{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    top: -25px;
+    left: -35px;
+    border-radius: 50%;
+}
+.school-item .school-icon{
+    background-position: center;
+    background-size: cover;
+}
+.school-item:first-child .school-icon{
+    background-image: url('Image/elementary-icon.jfif');
+}
+.school-item:nth-child(2) .school-icon{
+    background-image: url('Image/high-icon.png');
+}
+.school-item:last-child .school-icon{
+    background-image: url('Image/university-icon.png');
+}
+.contentFrame{
+    width: 100%;
+    margin-top: 80px;
+}
+#skill .content{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    margin: 50px;
+}
+.skill-type{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 30px;
+}
+.skill-type div:first-child ion-icon{
+    background-color: #101a3e;
+    padding: 20px;
+    font-size: 30pt;
+    border-radius: 50%;
+}
+.skill-slot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-check{
+    width: 85%;
+}
+
+.skill-check ul li{
+    list-style-type: '✔️';
+    padding-inline-start: 15px;
+}
+#contact{
+    background-color: #101a3e;
+    color: white;
+    font-family: 'Prompt', sans-serif;
+    padding: 20px;
+}
+
+.contact-head{
+    display: flex;
+    column-gap: 10px;
+    font-size: 20pt;
+    margin-left: 20px;
+}
+
+.contact-list{
+    margin-top: 30px;
+    margin-left: 100px;
+    flex-wrap: wrap;
+    display: flex;
+    column-gap: 60px;
+}
+.contact-list div{
+    display: flex;
+    column-gap: 20px;
+    font-size: 15pt;
+    color: white;
+}
+.contact-list div:last-child a{
+    text-decoration: none;
+    color: white;
+    cursor: default;
+}
+@keyframes fadeIn{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    75%{
+        opacity: 0.65;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn2{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    75%{
+        opacity: 0.65;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:1200px){
+    #aboutme .content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #aboutme .content div:nth-child(2){
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    header .pc{
+        display: none;
+    }
+    header .ph{
+        display: block;
+    }
+    header a{
+        padding: 30px;
+    }
+}
